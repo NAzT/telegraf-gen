@@ -1,0 +1,138 @@
+version: '3.5'
+services:
+
+  telegraf_artisan2:
+    image: telegraf
+    volumes:
+      - ./lifetime/artisan2.conf:/etc/telegraf/telegraf.conf:ro
+    environment:
+      - TZ=Asia/Bangkok
+    restart: always
+    network_mode: "host"
+
+  telegraf_ccdc_sentdb:
+    image: telegraf
+    volumes:
+      - ./lifetime/ccdc_sentdb.conf:/etc/telegraf/telegraf.conf:ro
+    environment:
+      - TZ=Asia/Bangkok
+    restart: always
+    network_mode: "host"
+
+  telegraf_heartbox:
+    image: telegraf
+    volumes:
+      - ./lifetime/heartbox.conf:/etc/telegraf/telegraf.conf:ro
+    environment:
+      - TZ=Asia/Bangkok
+    restart: always
+    network_mode: "host"
+
+  telegraf_homebrew_co2:
+    image: telegraf
+    volumes:
+      - ./lifetime/homebrew_co2.conf:/etc/telegraf/telegraf.conf:ro
+    environment:
+      - TZ=Asia/Bangkok
+    restart: always
+    network_mode: "host"
+
+  telegraf_homebrew_db:
+    image: telegraf
+    volumes:
+      - ./lifetime/homebrew_db.conf:/etc/telegraf/telegraf.conf:ro
+    environment:
+      - TZ=Asia/Bangkok
+    restart: always
+    network_mode: "host"
+
+  telegraf_mart:
+    image: telegraf
+    volumes:
+      - ./lifetime/mart.conf:/etc/telegraf/telegraf.conf:ro
+    environment:
+      - TZ=Asia/Bangkok
+    restart: always
+    network_mode: "host"
+
+  telegraf_model_dbp:
+    image: telegraf
+    volumes:
+      - ./lifetime/model_dbp.conf:/etc/telegraf/telegraf.conf:ro
+    environment:
+      - TZ=Asia/Bangkok
+    restart: always
+    network_mode: "host"
+
+  telegraf_model_ivdb:
+    image: telegraf
+    volumes:
+      - ./lifetime/model_ivdb.conf:/etc/telegraf/telegraf.conf:ro
+    environment:
+      - TZ=Asia/Bangkok
+    restart: always
+    network_mode: "host"
+
+  telegraf_model_n-nbiotdb:
+    image: telegraf
+    volumes:
+      - ./lifetime/model_n-nbiotdb.conf:/etc/telegraf/telegraf.conf:ro
+    environment:
+      - TZ=Asia/Bangkok
+    restart: always
+    network_mode: "host"
+
+  telegraf_model_n-nh-wifi:
+    image: telegraf
+    volumes:
+      - ./lifetime/model_n-nh-wifi.conf:/etc/telegraf/telegraf.conf:ro
+    environment:
+      - TZ=Asia/Bangkok
+    restart: always
+    network_mode: "host"
+
+  telegraf_model_n-nh:
+    image: telegraf
+    volumes:
+      - ./lifetime/model_n-nh.conf:/etc/telegraf/telegraf.conf:ro
+    environment:
+      - TZ=Asia/Bangkok
+    restart: always
+    network_mode: "host"
+
+  telegraf_model_n-nx:
+    image: telegraf
+    volumes:
+      - ./lifetime/model_n-nx.conf:/etc/telegraf/telegraf.conf:ro
+    environment:
+      - TZ=Asia/Bangkok
+    restart: always
+    network_mode: "host"
+
+  telegraf_model_n-wifidb:
+    image: telegraf
+    volumes:
+      - ./lifetime/model_n-wifidb.conf:/etc/telegraf/telegraf.conf:ro
+    environment:
+      - TZ=Asia/Bangkok
+    restart: always
+    network_mode: "host"
+
+  telegraf_model_prodb:
+    image: telegraf
+    volumes:
+      - ./lifetime/model_prodb.conf:/etc/telegraf/telegraf.conf:ro
+    environment:
+      - TZ=Asia/Bangkok
+    restart: always
+    network_mode: "host"
+
+  telegraf_model_tdb:
+    image: telegraf
+    volumes:
+      - ./lifetime/model_tdb.conf:/etc/telegraf/telegraf.conf:ro
+    environment:
+      - TZ=Asia/Bangkok
+    restart: always
+    network_mode: "host"
+
